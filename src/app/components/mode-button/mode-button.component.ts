@@ -14,4 +14,10 @@ export class ModeButtonComponent {
   protected onClick(): void {
     this.clickButton.emit();
   }
+
+
+  // Public wrapper for testing
+  public triggerClick(): void {
+    this.onClick();
+  }
 }
